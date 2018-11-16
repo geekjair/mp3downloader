@@ -79,7 +79,7 @@ public class Downloader {
 	}
 	
 	private  CloseableHttpClient generateClientDemo() {
-		 HttpHost proxy = new HttpHost("127.0.0.1", 8888, "http");
+		 //HttpHost proxy = new HttpHost("127.0.0.1", 8888, "http");
        HttpClientBuilder httpClientBuilder = HttpClients.custom();
        //httpClientBuilder.setProxy(proxy);
        //httpClientBuilder.setConnectionManager(connectionManager);

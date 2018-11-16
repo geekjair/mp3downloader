@@ -24,6 +24,10 @@ public class BodyParse {
 		List<String> result = new ArrayList<String>();
 		JSONObject jsonObject = JSONObject.parseObject(body);
 		JSONArray booklist = jsonObject.getJSONArray("list");
+		if(booklist == null){
+			System.out.println(jsonObject.get("msg"));
+			return result;
+		}
 		for (int i = 0; i < booklist.size(); i++) {
 			JSONObject book = booklist.getJSONObject(i);
 			result.add(book.getString("path"));

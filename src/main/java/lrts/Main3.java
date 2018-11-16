@@ -16,7 +16,7 @@ import common.FileDownloader;
  * @author admin
  *
  */
-public class Main2 {
+public class Main3 {
 	public final static String path = "dpcq2";
 	public static
 	void main(String[] args) throws URISyntaxException {
@@ -27,7 +27,7 @@ public class Main2 {
 			//获取列表
 			String url = new LrtsURLBuilder().getURI()
 			.addParameter("bookId", "5622")
-			.addParameter("pageNum", "30")
+			.addParameter("pageNum", "21")
 			.addParameter("pageSize", "42")
 			.addParameter("sortType", "0")
 			.setHost("dapis.mting.info")
@@ -66,7 +66,7 @@ public class Main2 {
 						String mp3Url = new BodyParse().getMp3Url(body2);
 						//下载mp3
 						System.out.println(Thread.currentThread().getName()+"正在下载:"+sectionName);
-						FileDownloader.saveFile(path,sectionName,mp3Url);
+						//FileDownloader.saveFile(path,sectionName,mp3Url);
 						System.out.println(Thread.currentThread().getName()+"下载完成:"+sectionName);
 					}
 				});
