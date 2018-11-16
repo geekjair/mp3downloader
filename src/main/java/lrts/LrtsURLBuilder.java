@@ -5,7 +5,7 @@ import org.apache.http.client.utils.URIBuilder;
 
 public class LrtsURLBuilder extends URIBuilder {
 	
-	private String token = "g5zx-lgi0WPP1SZKF6GjFg**_8-UFA_tZ9NxKMmXPZls0reeHZNP5nGdA";
+	private String token = "wKuk38rKUlTP1SZKF6GjFg**_Vb_E5-vcHwxbZ0PqUTgmP_rb9srdZRs_";
 	//private String imei = "ODYzMjU0MDMyNjY2NzQ0";
 	
 	public URIBuilder getURI(){
